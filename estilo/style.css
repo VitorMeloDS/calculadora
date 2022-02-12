@@ -1,0 +1,75 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(-50deg, #0e8a50, #327cc2, #27866e, #054988 );
+}
+
+
+input{
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=text]{
+    width: calc(100% - 4px);
+    height: 50px;
+}
+
+input[type=button]{
+    width: 100px;
+    height: 50px;
+    transition: ease 0.3s;
+    cursor: grab;
+}
+
+div#calculadora{
+    box-shadow: 0 0 50px black;
+    background: linear-gradient(-50deg, #0e8a50, #327cc2, #27866e, #054988 );
+    
+}
+
+div#calculadora div{
+    display: flex;
+}
+
+div#calculadora div input:nth-child(4){
+    background: gray;
+}
+
+div#linha4 input:nth-child(1), div#calculadora{
+    border-bottom-left-radius: 30px;
+}
+
+div#linha4 input:nth-child(1){
+    background: #f80707;
+    
+}
+
+div#linha4 input:nth-child(3){
+    background: #4ba105;
+}
+
+div#linha4 input:nth-child(4), div#calculadora{
+    border-bottom-right-radius: 30px;
+}
+
+input[type=button]:hover {
+    filter: brightness(80%);
+}
+
+input[type=button]:active{
+    transform: scale(0.8);
+}

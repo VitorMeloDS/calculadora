@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="favicon/calculadora4.ico" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <form action="" name="calc">
+        <div id="calculadora">
+
+            <input type="text" id="visor" name="visor">
+
+            <div id="linha1">
+                <input type="button" value="7" class="botao borda" onclick="botao(value)">
+                <input type="button" value="8" class="botao borda" onclick="botao(value)">
+                <input type="button" value="9" class="botao borda" onclick="botao(value)">
+                <input type="button" value="/" class="botao borda" onclick="botao(value)">
+            </div>
+
+            <div id="linha2">
+                <input type="button" value="4" class="botao borda" onclick="botao(value)">
+                <input type="button" value="5" class="botao borda" onclick="botao(value)">
+                <input type="button" value="6" class="botao borda" onclick="botao(value)">
+                <input type="button" value="*" class="botao borda" onclick="botao(value)">
+            </div>
+
+            <div id="linha3">
+                <input type="button" value="1" class="botao borda" onclick="botao(value)">
+                <input type="button" value="2" class="botao borda" onclick="botao(value)">
+                <input type="button" value="3" class="botao borda" onclick="botao(value)">
+                <input type="button" value="-" class="botao borda" onclick="botao(value)">
+            </div>
+
+            <div id="linha4">
+                <input type="button" value="c" class="botao borda" onclick="reseta()">
+                <input type="button" value="0" class="botao borda" onclick="botao(value)">
+                <input type="button" value="=" class="botao borda" onclick="calcula()">
+                <input type="button" value="+" class="botao borda" onclick="botao(value)">
+            </div>
+        </div>
+    </form>
+    <script language="JavaScript" src="javascript/script.js"></script>
+</body>
+</html>
